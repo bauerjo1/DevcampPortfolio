@@ -15,8 +15,7 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
-  
   def copyright_generator
-    BauerViewTool::Renderer.copyright 'Jonathan Bauer', 'All rights reserved'
+    JonViewTool::Renderer.copyright 'Jonathan Bauer', 'All rights reserved'
   end
 end
