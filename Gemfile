@@ -57,4 +57,4 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap','~> 4.0.0.alpha6'
 
-gem 'jon_view_tool', git: 'https://github.com/bauerjo1/jon_view_tool'
+gem 'jon_view_tool', '~> 0.1.0'
