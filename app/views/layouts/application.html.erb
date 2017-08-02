@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>" />
@@ -17,9 +17,9 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          
+
           <%= image_tag(
-            'image.gif',
+            'coruscant__2_by_daroz-d7idgv0.jpg',
             id:'background',
             autoplay: true,
             loop: true,
@@ -27,15 +27,15 @@
             poster: 'home_bg.png'
             )
             %>
-    
+
           <%= render "shared/application_nav" %>
-          
+
           <%= yield %>
       
           <%= render "shared/application_footer" %>
-          
+
           <%= source_helper("application") %>
-          
+
         </div>
       </div>
     </div>
