@@ -1,7 +1,7 @@
 <%= form_for(@portfolio_item) do |f| %>
   <% if @portfolio_item.errors.any? %>
     <% @portfolio_item.errors.full_messages.each do |error| %>
-        <%= js add_gritter(error, :title => "Jonathan Bauer Portfolio", sticky: false, time: 1255) %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
   
@@ -51,11 +51,9 @@
         <%= link_to_add_association 'Add Technology', f, :technologies %>
       </div>
     </div>
-  
+
     <div class="form-group">
       <%= f.submit 'Save Portfolio Item', class: 'btn btn-primary btn-block' %>
     </div>
   </div>
 <% end %>
-
-How to Integrate Cocoon in Rails 5 time: 10:22

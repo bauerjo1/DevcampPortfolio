@@ -1,7 +1,7 @@
 <%= form_for(blog) do |f| %>
   <% if blog.errors.any? %>
     <% blog.errors.full_messages.each do |error| %>
-        <%= js add_gritter(error, :title => "Jonathan Bauer Portfolio", sticky: false, time: 1255) %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
 
@@ -17,3 +17,5 @@
     <%= f.submit "Submit", class: 'btn btn-primary' %>
   </div>
 <% end %>
+
+
