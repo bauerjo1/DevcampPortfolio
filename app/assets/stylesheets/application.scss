@@ -221,12 +221,29 @@ padding: 30px;
   color: orange;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  padding: 40px;
+}
 
+.profile-img {
+  border: 1px solid grey;
+}
 
+.app-card-container a {
+  color: blue;
+}
 
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-
-
-
-
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
